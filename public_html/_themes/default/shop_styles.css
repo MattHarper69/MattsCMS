@@ -1,0 +1,384 @@
+	/*----------------------------------------------------*\
+	|			Online Shop Styles						   |
+	\*----------------------------------------------------*/
+
+ div.ShopDiv 
+{
+	 border-bottom: solid #888888 1px; 
+	/*border-top: solid 3px #00aad7;*/
+	
+} 
+	
+ .OpenDiv
+,.CloseDiv
+,img.Add2Cart
+,div#ShopCheckOut
+{
+	box-shadow: 6px 6px 9px #666; 
+	-moz-box-shadow: 6px 6px 9px #666;  /* for moz browsers	*/
+	-webkit-box-shadow: 6px 6px 9px #666; /* for Safari and chrome	*/ 
+	/* filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000,direction=135); */	/* for IE	*/	
+}
+
+ div.ShopDiv  a:hover
+ {
+	color: #bb1111;
+	text-decoration: none;	
+ }
+
+div#ShopBreadCrumb
+{
+	border: none;
+	padding: 0.4em;
+	/* background-color: #eeeeee; */
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+ div#ShopLeftColumn
+ {		
+	float: left;
+	width: auto;
+	/* height: 500px; */
+}
+
+ div#ShopRightColumn
+ {
+
+	float: right;
+	width: 140px;
+	/* height: 500px; */
+}
+
+ div#ShopCentreColumn
+ {
+	float: left; 
+ 
+	margin-left: 10px;
+	
+	width: 640px;
+	/* height: 500px; */
+}
+
+ #ShopCartHeading
+,#ShopDetailsHeading
+,#ShopCCformHeading	
+{
+	padding: 0.5em;	/* hack for IE jquery	*/
+	
+}	
+
+.OpenDiv
+{
+	background-image: url('Button_show.gif');	
+	background-repeat: no-repeat;
+	background-position: right center;	
+}
+
+.CloseDiv
+{
+	background-image: url('Button_hide.gif');	
+	background-repeat: no-repeat;
+	background-position: right center;	
+}
+
+h2.ShopCheckOut 		/* hack for IE jquery	*/
+{
+	padding: 1em;
+}	
+
+div#ShopContShopButton
+{
+	margin-top: 1em;
+}
+
+div#ShopCartSide
+{
+	/* border: solid #666666 1px; */
+	padding: 0.4em;
+	background-color: #daeef8;
+
+}
+
+#ShopCartContents
+{
+	margin-right: auto;
+	margin-left: auto;	
+	padding: 10px;
+}
+
+ #ShopCartContents table
+,#ShopCartContents table tr td
+{
+	margin: 1em;
+	padding: 0.5em;
+	border: none;
+	background-color: transparent;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+ tr.ShopCartTableHeader
+ ,tr.ShopCartTableFooter
+,td.ShopCartTableTotal
+{
+	border: solid #aaaaaa 1px;
+	background-color: #eeeeee;
+	font-weight: bold;
+}
+
+h2.ShopItemList
+{
+	margin-top: 2em;
+}
+
+.ShopItemList td
+{
+	padding: 5px;
+}
+
+p.ShopButton
+{
+	margin: 1.5em 0.1em;
+}
+
+ a.ShopButton:link
+,a.ShopButton:visited
+,a.ShopButton:active
+{
+	border-top: solid #eeeeee 2px;
+	border-right: solid #777777 2px;
+	border-bottom: solid #000000 2px;
+	border-left: solid #cccccc 2px; 
+	
+ 	margin: 0.5em;
+	padding: 0.5em;
+	white-space: nowrap;
+
+	/* font-weight: bold; */	
+	color: #0000aa;
+	background-color: #cccccc;		
+}
+
+ a.ShopButton:hover
+ {
+ 	color: #aa0044;
+	background-color: #dddddd;
+
+	text-decoration: none;
+}
+
+ .ShopViewAllCatsButton
+,.ShopPrintReceiptButton
+{
+	/* float: right; */
+	margin: 1em;
+}
+
+.ShopItemLink
+{
+	font-size: 1.1em;
+}
+
+ul.ShopCatListing
+{
+	list-style-type: none;
+	margin-left: 10em;
+	margin-bottom: 3em;
+}
+
+li.ShopCatListing
+{
+	font-size: 1.5em;
+	margin-top: 0.5em;
+	text-align: left;
+}
+
+div.ShopItemShowNav
+{
+	padding: 0.8em;
+}
+
+li.ShopItemShowNav
+{
+	display: inline;
+	margin: 0.3em;
+	list-style-type: none;
+}
+
+ a.ShopItemShowNav:link
+,a.ShopItemShowNav:visited
+,a.ShopItemShowNav:active
+{
+	padding: 0.2em;
+	border: solid #333333 1px;
+	background-color: #dddddd;
+	
+	color: #1111ee;
+}
+
+ a.ShopItemShowNav:hover
+,a.ShopItemShowNav:focus
+{
+	background-color: #eeeeee;
+	text-decoration: none;
+	color: #111199;
+}
+
+
+table.ShopItemShowTable
+{
+/* 	
+	margin-right: auto;
+	margin-left: auto; 
+*/
+	margin: 1em;
+	padding: 0.7em;
+	border: 1px solid #444444;
+	background-color: transparent;
+}
+
+ td.ShopItemShowPrice
+,td.ShopItemShowRating
+{
+	border: 1px solid #444444;
+	background-color: transparent;
+}
+
+ p.ShopItemPrice
+,span.ShopItemPrice
+{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #bb1111;
+}
+
+img.ShopItemShowImage
+{
+	border: none;
+	width: 200px;
+}
+
+p.ShopItemShowDesc
+{
+	text-align: justify;
+}
+
+ a.PositiveStar:link
+ ,a.PositiveStar:active
+ ,a.PositiveStar:visited
+{
+	font-size: 18px;
+	background-image: url('star_gold.png');
+	background-repeat: no-repeat;	
+}
+
+ a.NegativeStar:link
+ ,a.NegativeStar:active
+ ,a.NegativeStar:visited
+{
+	font-size: 18px;
+	background-image: url('star_grey.png');
+	background-repeat: no-repeat;	
+}
+
+ a.PositiveStar:hover
+,a.NegativeStar:hover
+{
+	text-decoration: none;
+	background-image: url('star_red.png');	
+}
+
+/*	Check-Out Form	*/
+
+div#ShopCheckOut
+{
+	margin-right: auto;
+	margin-left: auto;	
+	padding: 1em;
+	border: none;
+	background-color: transparent;
+	background-color: #daeef8;
+	
+}
+  .ShopCheckOutForm  label
+
+ {
+	float:left;
+	width: 8em;
+	font-size: 1em;
+	font-weight: bold;
+ }
+
+  .ShopCCForm label
+ {
+	float:left;
+	width: 14em;
+	font-size: 1em;
+	font-weight: bold;
+ }
+ 
+ ul.ShopCheckOutForm
+,ul.ShopCCForm
+{
+	margin: 1em 2em 1em;
+	text-align: left;
+	list-style-type: none;
+}
+
+ ul.ShopCheckOutForm li
+,ul.ShopCCForm li
+{
+	margin: 0.5em;
+}
+
+ #ShopCheckOutReadback label
+ {
+	float:left;
+	width: 6em;
+ }
+ 
+ #ShopCheckOutPaynowButtons li
+ {
+	display: inline;
+	list-style-type: none;
+	margin-left: 20px;
+ }
+ 
+ h3.ShopCheckOut
+,.ShopReturnMSG
+{
+	padding: 1em;
+	background-color: #dddddd;
+	border: solid 1px #777777;
+	text-align: center;
+}
+
+ table.ShopItemListTable
+,table.SweepsPromListTable
+{
+	border-style: none;
+	border-collapse: collapse;
+}
+
+.ShopItemListImage
+{
+	text-align: center;
+}
+img.PromoList
+{
+	height: 120px; 
+	border: none;
+}
+
+.SweepsPromListAdd2Cart
+{
+	text-align: right;
+}
+
+tr.ShopItemListAltRow
+,tr.ShopItemListAltRow td
+
+{
+	background-color: #eeeeee;
+}

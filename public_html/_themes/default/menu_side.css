@@ -1,0 +1,222 @@
+
+	
+	/*============================================================================================*\
+	|				 CSS by Matt Harper @ Site of Hand Web Design (c)2009 					|
+	\*============================================================================================*/
+
+	
+	/*	=================	Side Menu	================	*/
+	
+#MenuSideDiv
+{		
+	width:140px;
+	
+	margin-left: auto;
+	margin-right: auto;	
+ 	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 2px; 
+	background-color: #dddddd;
+	
+	border-top: solid #eeeeee 3px;
+	border-right: solid #777777 3px;
+	border-bottom: solid #000000 3px;
+	border-left: solid #cccccc 3px; 
+	
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+	text-align: left;
+
+}
+
+/*	=================================================================================================================	*/
+
+ #MenuSide
+,#MenuSide ul 
+{
+	list-style: none;
+	line-height: 1;
+	padding: 0;
+	margin: 0 0 0 0;
+}
+
+#MenuSide a 
+{
+	display: block;
+	width: 120px;
+	w\idth: 110px;
+	color: #111111;
+	text-decoration: none;
+	padding: 4px 10px;	
+}
+
+#MenuSide li a.Daddy 
+{
+	background-image: url('Button_arrow_right.gif');	
+	/*	background-image: url('Button_down_arrow.gif');		 <--	use this (un-comment) for expanding menu*/
+		
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+
+#MenuSide li a.DaddyOpen 
+{
+	background-image: url('Button_arrow_down.gif');
+	/*	background-image: url('Button_right_arrow.gif');		 <--	use this (un-comment) to remove OPEN UP links	*/
+	
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+
+
+#MenuSide li 
+{
+	padding: 0;
+	/* width: 120px; */
+	
+	border-top: solid #eeeeee 3px;
+	border-right: solid #777777 3px;
+	border-bottom: solid #000000 3px;
+	border-left: solid #cccccc 3px; 
+
+	background-color: #cccccc;		
+}
+
+ #MenuSide li ul.MenuSideSub	/*  <--	use this (un-comment) for OPENED UP links	*/
+/*  #MenuSide li ul 				  <--	use this (un-comment) to remove OPENED UP links	*/
+ {
+	position: absolute;
+	left: -999em;
+	height: auto;
+
+	width: 80px;
+	w\idth: 80px;	
+	font-weight: normal;
+
+	margin-left: 120px;
+	margin-top: -20px;
+}
+
+#MenuSide li li 
+{
+	padding-right: 10px;
+	width: 120px
+}
+
+#MenuSide li ul a 
+{
+	width: 120px;
+	w\idth: 100px;
+}
+
+ /* */
+#MenuSide li ul ul 
+{
+	margin: -20px 0 0 120px;
+}
+
+
+
+
+/*	===========	CSS fly-out Menu Trickery	=============	*/
+
+ #MenuSide li:hover ul ul
+,#MenuSide li:hover ul ul ul
+,#MenuSide li:hover ul ul ul ul
+,#MenuSide li.over ul ul
+,#MenuSide li.over ul ul ul 
+,#MenuSide li.over ul ul ul ul
+{
+	left: -999em;
+}
+
+ #MenuSide li:hover ul
+,#MenuSide li li:hover ul
+,#MenuSide li li li:hover ul
+,#MenuSide li li li li:hover ul
+,#MenuSide li.over ul
+,#MenuSide li li.over ul
+,#MenuSide li li li.over ul 
+,#MenuSide li li li li.over ul 
+{
+	left: auto;
+	z-index:1;
+	
+	/*	use the following(un-comment) for expanding menu		
+		position: relative;		
+		margin-left:10px;	 
+		margin-top:5px;
+	*/
+}
+
+/* 	Hover Styles	*/
+ #MenuSide li:hover
+,#MenuSide li.over
+,#MenuSide ul.MenuSideOpen li:hover
+,#MenuSide ul.MenuSideOpen li.over
+{
+	background: #bb1111;		
+}
+/* */
+
+ #MenuSide a:hover
+{
+	color: #ffffff;
+}
+
+/*	Currently Selected Link	*/
+ #MenuSide li.Selected
+{
+	font-weight:bold;
+	
+	border-top: solid #eeeeee 0px;
+	border-right: solid #777777 1px;
+	border-bottom: solid #000000 1px;
+	border-left: solid #cccccc 0px; 
+	
+    padding: 1px 1px 1px 1px;
+	background-color: #bbbbbb;	
+}
+
+ #MenuSide li.Selected a
+ {
+ 	color:#bb1111;
+}
+
+ #MenuSide li.Selected li a
+ {
+	color: #ffffff;
+}
+
+ #MenuSide li li.Selected
+{
+    padding: 1px 10px 1px 0;
+}
+
+
+/*	===========	Opened-out (currently selected) sub-menuTrickery	=========== 	*/
+/* Remove the Following To Remove OPENED-OUT links   */
+
+ #MenuSide ul.MenuSideOpen
+ {
+   	display: block;
+	position: relative;	
+	margin: 0 0 0 10px;	
+ }
+
+ #MenuSide ul.MenuSideOpen li
+{
+	font-weight: normal;
+	color:#ffffff;	
+	
+	border-top: solid #eeeeee 1px;
+	border-right: solid #777777 1px;
+	border-bottom: solid #000000 1px;
+	border-left: solid #dddddd 1px; 
+	
+	background-color: #dd2222;	
+}
+
+
+

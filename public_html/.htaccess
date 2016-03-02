@@ -1,0 +1,27 @@
+Options All -Indexes
+
+RewriteEngine on
+
+RewriteRule ^$ index.php?p=1 [L]
+RewriteRule ^home$ index.php?p=1 [L]
+RewriteRule ^services$ index.php?p=2 [L]
+RewriteRule ^about$ index.php?p=3 [L]
+RewriteRule ^contact$ index.php?p=4 [L]
+RewriteRule ^page$ index.php?p=5 [L]
+RewriteRule ^search$ index.php?p=100 [L]
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://newsite.lin/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.newsite.lin/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://newsite.lin/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.newsite.lin/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://siteofhand.com.au/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.siteofhand.com.au/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://engadinewebdesign.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.engadinewebdesign.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://sutherlandshireweb.com.au/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.sutherlandshireweb.com.au/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://sydneysouthwebdesign.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.sydneysouthwebdesign.com/.*$ [NC]
+
+RewriteRule \.(gif|jpg|jpeg|bmp|zip|rar|mp3|flv|swf|xml|php|png|css|pdf)$ - [F]

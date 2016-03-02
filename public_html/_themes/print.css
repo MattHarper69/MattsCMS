@@ -1,0 +1,192 @@
+
+	
+	/*============================================================================================*\
+	|				 CSS by Matt Harper @ Site of Hand Web Design (c)2009 					|
+	\*============================================================================================*/
+
+	
+	/* Zero default margin & padding around common elements */
+	body, dd, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, ul
+	{
+		margin: 0;
+		border: 0 none transparent;
+		padding: 0;
+	}
+
+	body
+	{		
+		font-size: 0.8em; 
+		background-color: #ffffff;
+		font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+		color: #000000;			
+	}
+	
+	
+	/*----------------------------------------------------*\
+	|				Screen Layout Divs					   |
+	\*----------------------------------------------------*/
+
+/* 	for maxium width display in IE subtract 28 px to allow for sroll-bar 	*/
+
+	 .SearchBox
+	,.ThemeSelector
+	,.Side1Column
+	,.Side2Column
+	,.Footer
+	,#MenuTop
+	,.BreadCrumbDiv
+	{
+		display: none
+	}
+	
+	img
+	{
+		border: none;
+	}
+	
+	
+	/*------------------------------------------------*\
+	|					FONTS						   |
+	\*------------------------------------------------*/
+/* 	 */
+h1	
+{
+	font-size: 1.4em;
+	margin: 0.7em;
+}	
+	
+h2	
+{
+	font-size: 1.3em;
+	margin: 0.7em;	
+}		
+
+h3	
+{
+	font-size: 1.2em;
+	margin: 0.6em;
+}
+	
+h4	
+{
+	font-size: 1.1em;
+	margin: 0.5em;
+}
+		
+p	
+{
+	font-size: 0.9em;
+	margin: 0.8em;
+}	
+	
+.Small
+{
+	font-size: 0.7em;
+	margin: 0.3em;
+}
+
+.Notice	
+{
+	font-size: 1.1em;
+	font-style: italic;
+	margin: 0.5em;
+}
+
+.RedHeading 
+{	
+	font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+	font-size: 1.2em;
+	font-weight: bolder;
+	color:#FF0000;
+}	
+	
+	/*---------------------------------------------------------------------------------------------*\
+	|					LINKS						   |
+	\*----------------------------------------------------------------------------------------------*/	
+
+	/*	Global Links	*/
+	
+	a:link
+	{
+		color: #0000bb;
+		text-decoration: underline;		
+		font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+	}
+	
+	a:visited 
+	{				
+		color: #0000bb;	
+		text-decoration: underline;		
+	}
+	
+	a:focus
+	{				
+		text-decoration: underline;
+		color: #7700dd; 	
+	}
+	
+	a:active
+	{					
+		color: #ff0000;					
+	}
+	
+	a:hover 
+	{					
+		text-decoration: underline;
+		color: #9922FF; 
+	}
+	
+	img
+	{
+		margin: 1em;
+	}
+	
+	
+	/*	==================	Misc Button Style Links	=======================	*/
+
+ a:link.ButtonLink
+,a:active.ButtonLink
+,a:visited.ButtonLink
+,a:link.ButtonLinkSelected
+,a:active.ButtonLinkSelected
+,a:visited.ButtonLinkSelected		
+{
+	margin: 0.5em;
+	padding: 0.5em;			
+	font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+	font-size: 0.7em;				
+}	
+	
+	
+ a:link.ButtonLink
+,a:active.ButtonLink
+,a:visited.ButtonLink	
+{
+
+	border-top: solid #eeeeee 2px;
+	border-right: solid #777777 2px;
+	border-bottom: solid #000000 2px;
+	border-left: solid #cccccc 2px; 
+			
+	color: #0000aa;
+	background-color: #ededed;			
+}
+	
+a:hover.ButtonLink
+{
+	background: #ffffff;
+	color: #558811;
+}
+
+ a:link.ButtonLinkSelected
+,a:active.ButtonLinkSelected
+,a:visited.ButtonLinkSelected		
+{	
+	border-top: solid #eeeeee 1px;
+	border-right: solid #777777 1px;
+	border-bottom: solid #000000 1px;
+	border-left: solid #cccccc 1px; 
+	
+	color: #dd0000;
+	background-color: #cccccc;			
+}

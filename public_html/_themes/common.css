@@ -1,0 +1,108 @@
+	
+	
+	
+/* Zero default margin & padding around common elements */
+body, dd, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, ul
+{
+	margin: 0;
+	border: 0 none transparent;
+	padding: 0;
+}
+
+.HiddenHeading
+{
+/* 		
+	position: absolute;
+	left: -999em;
+*/
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+
+}
+
+.Bold
+{
+	font-weight: bold;
+}
+
+.Italic
+{
+	font-style: italic;
+}
+
+.Strike
+{
+	text-decoration: line-through;
+}
+
+.Underline
+{
+	text-decoration: underline;
+}
+
+.AlignLeft
+{
+	text-align: left;
+}
+
+.AlignRight
+{
+	text-align: right;
+}
+
+.AlignCentre
+{
+	text-align: center;
+}
+
+.AlignJustify
+{
+	text-align: justify;
+}
+
+.CaptchaInput
+{
+	text-transform: uppercase;
+}
+
+
+	/*---------------------------------------------------------------------------------------------*\
+	|				    IMAGES							   |
+	\*----------------------------------------------------------------------------------------------*/
+
+img
+{
+	border: none;				
+}
+	
+
+.NavIcon	
+{
+	width: 52px;
+	height: 48px; 
+	border: none;				
+}
+
+.Thumbnail	
+{
+	height: 64px; 
+	border: none;				
+}
+
+.TinyThumb
+{
+	height: 40px; 
+	border: none;				
+}
+
+
+
+/******** Site specific **********/
+
+

@@ -1,0 +1,14 @@
+
+to dump an uploaded SQL file:	
+	
+	# 	cd /srv/www/_NewSite/_db_backup/
+	
+	#	mysql -u root -p sit49639_moments < /srv/www/_NewSite/_db_backup/_newsite_13-3-12.sql
+	
+to back up db:	
+	#	mysqldump -u root -p sit49639_moments > /srv/www/_NewSite/_db_backup/_newsite_6-3-12_LIVE.sql	
+	
+to back up a table/s:	
+	#	mysqldump -u root -p sit49639_moments contact_form_recieved_data > /srv/www/_NewSite/_db_backup/contact_form_data_LIVE.sql
+	
+	( mysql root password: MysqlRoot )

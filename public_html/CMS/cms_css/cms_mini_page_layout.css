@@ -1,0 +1,212 @@
+	/*-----------------------------------------------------*\
+	|		Page Divs and Menus Mini Layout					|
+	\*-----------------------------------------------------*/
+	
+	
+	.CMS_MiniPageLayout_Window
+	{
+
+		float: right;
+		padding: 20px 3px 6px 3px;
+		width: 204px;
+		height: 136px;
+		background-image: url('BG_MiniPageLayout_BrowserWindow.png');
+		border: none;	
+	}
+
+
+	 .CMS_MiniPageLayout_Window .Hilight:hover
+	,.CMS_MiniPageLayout_HilightBorder
+	{
+		border: solid 1px #ff00ff;
+
+	}
+	
+	
+	
+	#CMS_MiniPageLayout_Container
+	{
+		height: 100%;
+		background-color: transparent;
+	}
+	
+
+	
+	#CMS_MiniPageLayout_banner
+	{
+		height: 24px;
+		background-color: transparent;
+	
+	}
+	
+	#CMS_MiniPageLayout_Wrapper2
+	{
+		height: 114px;
+		background-color: transparent;
+
+	
+	}
+
+	#CMS_MiniPageLayout_menu_top
+	{
+		margin: auto;
+		width: 120px;		
+		height: 8px;
+		background-color: transparent;	
+		
+	}
+
+	#CMS_MiniPageLayout_bread_crumb
+	{
+		margin: auto;
+		width: 120px;			
+		height: 6px;
+		background-color: transparent;
+
+	
+	}
+	
+	#CMS_MiniPageLayout_Wrapper3
+	{
+		height: 84px;
+		background-color: transparent;
+
+					
+	}
+	
+	#CMS_MiniPageLayout_side_1
+	{
+		margin-top: 14px;
+		width: 36px;
+		height: 84px;
+		float: left;
+		background-color: transparent;
+
+
+	}
+	
+	#CMS_MiniPageLayout_menu_side
+	{
+		margin: -14px auto 0 auto;
+		width: 30px;
+		height: 35px;
+		background-color: transparent;
+
+
+	}
+	
+	#CMS_MiniPageLayout_side_2
+	{
+		margin-top: 14px;
+		width: 40px;
+		height: 84px;
+		float: right;
+		background-color: transparent;
+
+
+	}
+	
+	#CMS_MiniPageLayout_Centre
+	{
+		width: 120px;	
+		height: 84px;
+		float: left;
+		background-color: transparent;
+
+
+	}
+	
+	#CMS_MiniPageLayout_footer
+	{
+		height: 15px;
+		clear: both;
+		background-color: transparent;
+
+	}
+
+	#CMS_MiniPageLayout_menu_foot
+	{
+		margin: -14px auto 0px 50px;		
+		float:left;
+		width: 100px;
+		height: 6px;
+		background-color: transparent;
+
+	}
+
+	
+	/*-----------------------------------------------------*\
+	|			Mod Position Mini Layout					|
+	\*-----------------------------------------------------*/	
+	
+	
+	.CMS_MiniModPosLayout_Container
+	{
+		border: solid 1px #666666;
+	}
+	
+	.CMS_MiniModPosLayout_banner
+	{		
+		padding: 0 5px;
+		background-color: #f9f9f9;
+	}
+
+	.CMS_MiniModPosLayout_Wrapper3
+	{
+					
+	}
+	
+	.CMS_MiniModPosLayout_side_1
+	{
+		float: left;
+		height: 100%;
+		padding: 0 5px;
+		background-color: #eeeeee;
+	}
+	
+	.CMS_MiniModPosLayout_side_2
+	{
+		float: right;
+		height: 100%;
+		padding: 0 5px;
+		background-color: #eeeeee;
+
+	}
+	
+	.CMS_MiniModPosLayout_Centre
+	{
+		float: left;		
+		width: 120px;	
+		height: 100%;
+		padding: 0 5px;
+
+	}
+	
+	.CMS_MiniModPosLayout_footer
+	{
+		clear: both;		
+		padding: 0 5px;
+		background-color:#f9f9f9;
+	}
+
+
+	
+	.CMS_MiniPageLayout_ModDiv_Selected
+	{
+		background-color:#ff00ff;
+	}
+	
+	.CMS_MiniPageLayout_ModDiv
+	{
+		border-bottom: solid 1px #eeeeee;
+	}	
+	
+	.CMS_MiniPageLayout_ModDiv:hover
+	{
+		border-bottom: solid 1px #ff00ff;
+	}
+
+	.CMS_MiniPageLayout_DivMod
+	{
+		border: solid 1px #ff00ff;
+	}

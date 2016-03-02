@@ -1,0 +1,214 @@
+
+	
+	/*=============================================================================================*\
+	|				 CSS by Matt Harper @ Site of Hand Web Design (c)2011 							|
+	\*=============================================================================================*/
+
+	
+	/*	================	Top Menu  Links	==============	*/
+	
+#MenuTopDiv
+{
+	margin-left: auto;
+	margin-right: auto;
+	
+	width: 1000px;
+	height: 30px;	
+	padding: 0;
+	
+	font-family: Helvetica, Geneva, Verdana, Arial, Times, Times New Roman;
+	font-size: 14px;  		
+}	
+
+/*	=================================================================================================================	*/
+ 
+ 
+ #MenuTop
+,#MenuTop ul 
+{
+	/* display: table;	 */	/*	uncomment to centre - UL - works in IE8 +	*/
+	z-index: 999;	
+	margin: 0 auto;		
+	width: auto;	
+	padding: 0;
+
+	list-style: none;
+}	
+
+
+#MenuTop a 
+{
+	display: block;
+	width: 140px;
+	padding: 12px 10px;
+
+	color: #ffffff;
+	font-weight: normal;
+	text-decoration: none;	
+	text-align: center;
+}
+
+#MenuTop li a.Daddy 
+{
+	background-image: url('Button_arrow_down.gif');
+	background-repeat: no-repeat;
+	background-position: 50% 80%;
+}
+
+#MenuTop li li a.Daddy 
+{
+	background-image: url('Button_arrow_right.gif');
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+
+#MenuTop  li.FlyLeft li a.Daddy 
+{
+	background-image: url('Button_arrow_left.gif');
+	background-repeat: no-repeat;
+	background-position: 5% 50%;
+}
+
+#MenuTop li 
+{	
+	/* display: table-cell;  */  /*	uncomment to centre - UL - works in IE8 +	*/
+	/* position: relative; */ 	/*	uncomment to centre - UL - works in IE8 +	*/		
+	
+	float: left;
+	margin: 0px;	
+	width: auto;	
+	padding: 0;
+	border-right: solid 1px #9999aa;
+/* 	border-left: solid 1px #00aad7;	 */
+	background-image: url('BG_Button_blue_grad.jpg');
+	background-repeat: repeat-x;
+	background-color: #00aad7;	
+}
+
+#MenuTop li ul 
+{
+	position: absolute;
+	left: -999em;
+	margin: 0px 0px 0px 0px;
+	height: auto;
+	width: 140px;
+	font-weight: normal;
+
+}
+
+#MenuTop li li 
+{
+	margin: 0px 0px 0px -1px;
+	width: auto;
+	border-top: solid 1px #00aad7;
+	background-image: none;
+}
+
+#MenuTop li ul a 
+{
+	width: 140px;
+}
+
+#MenuTop li ul ul 
+{
+	margin: -46px 0 0 161px;
+}
+
+#MenuTop li.FlyLeft ul ul 
+{
+	margin: -46px 0 0 -161px;
+}
+
+
+/*	===========	CSS fly-out Menu Trickery	=============	*/
+
+ #MenuTop li:hover ul ul
+,#MenuTop li:hover ul ul ul
+,#MenuTop li:hover ul ul ul ul
+,#MenuTop li.over ul ul
+,#MenuTop li.over ul ul ul 
+,#MenuTop li.over ul ul ul ul
+{
+	left: -999em;
+}
+
+ #MenuTop li:hover ul
+,#MenuTop li li:hover ul
+,#MenuTop li li li:hover ul
+,#MenuTop li li li li:hover ul
+,#MenuTop li.over ul
+,#MenuTop li li.over ul
+,#MenuTop li li li.over ul 
+,#MenuTop li li li li.over ul 
+{
+	left: auto;
+}
+
+ #MenuTop li:hover
+,#MenuTop li.over 
+{
+	background: #00aad7 url('BG_Button_blue_grad_Over.jpg') repeat-x;		
+}
+
+#MenuTop a:hover
+{
+	color: #ffffff;
+}
+
+/*	Currently Selected Link	*/
+#MenuTop li.Selected
+{
+	background: #00aad7 url('BG_Button_blue_grad_Over.jpg') repeat-x;	
+}
+
+ #MenuTop li.Selected a
+{
+ 	width: 140px;
+	font-weight: bolder;
+}
+ #MenuTop li.Selected li a
+ {
+	color: #ffffff;
+}
+
+ #MenuTop li li.Selected
+{
+   
+}
+	 
+
+
+/*	==============	The Sub Top Menu listing ( for use with IE 6 and no JavaScript  )	==============	*/
+
+#SubMenuTopDiv
+{
+	clear: left;
+	
+	margin-left: auto;
+	margin-right: auto;	
+	
+	width: auto;
+	height: 1.8em;
+
+	padding: 0.5em 8em;
+
+	background-color: #00aad7;
+	background-repeat: repeat-x;	
+	color: #ffffff;
+	font-size: 1.2em; 
+}
+
+#SubMenuTopDiv ul li
+{
+	display: inline; 
+}
+
+#SubMenuTopDiv  a
+{
+  color: #ffffff; 
+}
+
+#SubMenuTopDiv  a:hover
+{
+  color: #0000ff; 
+}		

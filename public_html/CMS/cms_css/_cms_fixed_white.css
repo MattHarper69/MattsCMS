@@ -1,0 +1,677 @@
+
+	
+	/*============================================================================================*\
+	|				 CMS CSS by Matt Harper @ Site of Hand Web Design (c)2009 				|
+	\*============================================================================================*/
+	
+	@import "cms_menu_top.css";
+	@import "cms_menu_side.css"; 
+	/*@import "cms_menu_side_flyout.css"; */
+	/*@import "cms_menu_side_expanding.css";*/
+	
+	@import "cms_mini_page_layout.css";
+	@import "cms_data_table.css";
+	@import "jquery-ui-1.8.4.custom.css";
+	@import "jquery.asmselect.css";
+	
+	/*---------------------------------------------------------------------------------------------------*\
+	|				Screen Layout Divs				  		|
+	\*_________________________________________________________*/
+
+ body.CMS a:link
+,body.CMS a:visited
+,a:link.CMS
+,a:visited.CMS
+{
+	color: #0000ff;
+}
+
+body
+{
+	font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+	font-size: 13px;
+}
+	
+	.ImageThumbHolder
+	{
+		float: left;
+		margin: 5px;
+		padding: 5px;
+		
+		width: 170px;
+		/* height: 140px; */
+
+		background-color: #F2EFE9;	
+		background-image: url('BG_fieldset_gradient.jpg');
+		background-repeat: repeat-x;	
+
+		border: 1px solid #bbbbbb;	
+	}	
+	
+	.ProfileImageCaption_TextArea
+	{
+		width: 160px;
+		height: 60px;
+	}
+
+	.ListItemHolder
+	{
+		display: block;
+		
+		/* margin: 5px; */
+		padding: 5px;
+		
+		width: 600px;
+		height: 50px;
+
+		background-color: #F2EFE9;	
+		background-image: url('BG_fieldset_gradient.jpg');
+		background-repeat: repeat-x;	
+
+		border: 1px solid #bbbbbb;	
+	}	
+	
+button
+{
+	cursor: pointer;
+}	
+	
+#CMS_Panel ul
+{
+	list-style-type: none;
+}
+
+
+
+li.Bullet
+{
+	list-style-type: disc;
+}	
+
+ul.Horizontal li
+{
+	display: inline;
+	list-style-type: none;
+	margin-left: 1em;	
+}
+	#CMS_Panel
+	{
+		position: fixed;
+		z-index: 9995;
+/* 		
+		top: 5px;
+		left: 10%;
+		right: 10%;
+ */
+		margin-right: auto;	
+		margin-left: auto;	 
+		
+		width: auto;
+		height: auto;
+		
+		padding: 5px;
+
+		background-color: #eeeeee;
+		color: #000000;
+
+		border-top: solid #eeeeee 3px;
+		border-right: solid #777777 3px;
+		border-bottom: solid #000000 3px;
+		border-left: solid #cccccc 3px; 
+		
+		text-align: left;
+		
+		font-size: 13px;		
+		font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+		
+	box-shadow: 6px 6px 9px #666; 
+	-moz-box-shadow: 6px 6px 9px #666;  /* for moz browsers	*/
+	-webkit-box-shadow: 6px 6px 9px #666; /* for Safari and chrome	*/ 
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#333333,direction=135);	/* for IE	*/		
+		
+		
+	}
+/* 	
+	.CMS_Panel_minimized
+	{
+		position: fixed;
+		z-index: 9995;
+		
+		bottom: 0px;
+		left: 0;
+
+		width: 900px;
+		height: 24px;
+		
+		padding: 5px;
+
+		background-color: #eeeeee;
+		color: #000000;
+
+		border-top: solid #eeeeee 3px;
+		border-right: solid #777777 3px;
+		border-bottom: solid #000000 3px;
+		border-left: solid #cccccc 3px; 
+
+		font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+	}	
+	 */
+	#CMS_PanelTitleBar
+	{
+		height: 24px;
+		padding: 2px;
+		background-color: #dddddd;
+		/* cursor: move; */
+	}
+	
+	#CMS_PanelTitleBar h1
+	{
+		margin: 0;
+		float: left;
+	}	
+	
+	 .CMS_EditModToolBar
+	,.CMS_WysiwygToolbar
+	,.CMS_SubPanel
+	{
+		/* position: relative; */
+
+		z-index: 9900;
+		display:none;
+		clear:both; 
+		float:left; 
+		height: auto; 
+		
+		margin: 0;
+		padding: 10px;
+
+		background-color: #eeeeee;
+		color: #000000;
+
+		border-top: solid #cccccc 4px;
+		border-right: solid #777777 4px;
+		border-bottom: solid #000000 4px;
+		border-left: solid #cccccc 4px; 		
+	}
+ 	
+	.CMS_WysiwygButton
+	{
+		outline: none;
+		padding: 0;
+		font-size: 12px;
+		width: 48px;
+		height: 24px;
+	}
+	
+	.CMS_WysiwygToolbar button
+	{
+		height: 24px;
+		outline: none;
+		font-size: 11px;
+	}
+	
+	
+		
+	.TabPanelContainer
+	{
+        width: 95%;
+		height: 100%;
+		float: left;
+		border: 2px solid #f0f0f0;
+		padding: 10px 20px;
+		background-color: #ffffff;
+	}
+
+	.TabPanelNavLinks
+	{
+		margin-bottom: 5px;
+		width: 100%;
+		list-style: none;	
+	}
+	
+	.TabPanelNavLinks li
+	{
+		display: inline;	
+		padding: 5px 10px 7px 10px;
+		background-color: #f0f0f0;
+		border: 2px solid #f0f0f0;
+		border-bottom: 0;
+	}
+	
+	.TabPanelNavLinks li a:link
+	,.TabPanelNavLinks li a:visited
+	,.TabPanelNavLinks li a:active
+	{
+		color:#000000;
+	}
+	
+	.TabPanelNavLinks li a:hover
+	{
+		color:#0000ff;
+	}
+	
+	.TabPanelNavLinks li.current
+	{ 
+		background: #ffffff;
+	}	
+	
+	
+/*	Remove the following div to create a "liquid" layout */
+
+	.CMS_Container 
+	{		
+/*
+		width: 980px;
+			
+		margin-right: auto;
+		margin-left: auto;
+*/	
+		margin-top: 10px;
+		margin-bottom: 10px;	
+		padding: 5px;
+		
+		background-color: #F2EFE9;
+
+		font-size: 0.8em;		
+		font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+		color: #000000;	
+		
+		text-align: center;	
+
+	}
+	
+
+	/*-------------------------------------------------------------------------------------------*\
+	|					FONTS						|
+	\*-------------------------------------------------------------------------------------------*/
+		
+
+.RedHeading 
+{	
+	font-size: 1.2em;
+	font-weight: bolder;
+	color:#FF0000;
+}
+		
+.WarningMSG	
+{
+	font-size: 1.1em;
+	color: #dd0000;
+	margin: 0.5em;
+}	
+
+.WarningMSGSmall	
+{
+	font-size: 0.8em;
+	color: #dd0000;
+	margin: 0.5em;
+}	
+
+.Greyed
+{
+	color: #bbbbbb;
+}
+
+.OkMSG	
+{
+	font-size: 1.1em;
+	color: #00dd00;
+	margin: 0.5em;
+}	
+	
+	.Hilight
+	{
+		background-color: #ffffff;
+	}
+	
+	.FinePrint
+	{
+		font-size: 0.8em;
+		font-weight: normal;
+		color:#999999;	
+	}
+
+	.BG_white
+	{
+		background-color: #ffffff;
+	}
+
+	 a.OpenCloseNextDiv:link
+	,a.OpenCloseNextDiv:visited
+	,a.OpenCloseNextDiv:active
+	{
+		color: #0000ff;
+		text-decoration: none;		
+		outline: none;		
+	}
+
+	a.OpenCloseNextDiv:hover
+	{
+		color: #aa00ff;		
+	}	
+/* ======================================================*/	
+
+h2.OpenDiv
+{
+	height: 22px;
+	background-image: url('Button_hide.gif');	
+	background-repeat: no-repeat;
+	background-position: top left;	
+}
+
+h2.CloseDiv
+{
+	height: 22px;
+	background-image: url('Button_show.gif');
+	background-repeat: no-repeat;
+	background-position: top left;	
+}
+	
+	 .AdminForm1
+	,.AdminForm2
+	,.AdminForm3
+	{
+
+		margin-left: auto;
+		margin-right: auto;
+
+		background-color: #F2EFE9;	
+		background-image: url('BG_fieldset_gradient.jpg');
+		background-repeat: repeat-x;	
+	}
+
+	.AdminForm1
+	{
+
+		margin-top: 10px;
+		margin-bottom: 0px;		
+		padding: 15px;
+		border: 3px solid #999999;	
+	}
+	.AdminForm2
+	{
+		margin-top: 10px;
+		margin-bottom: 0px;		
+		padding: 10px;
+		border: 2px solid #aaaaaa;	
+	}
+
+	.AdminForm3
+	{
+		float: left;
+		margin: 5px;
+	
+		padding: 5px;
+		border: 1px solid #bbbbbb;	
+	}
+
+	.AdminFormTabPanel
+	{
+		height: 100%;
+		/* width: 800px; */
+	}
+	
+	legend
+	{
+		font-size: 1em;
+		font-weight: normal;	
+	}
+	
+	table.AdminForm
+	{
+		border-collapse:collapse;
+	}
+	
+	.AdminForm  tr
+	{
+		background-image: url('BG_fieldset_gradient.jpg');
+		background-repeat: repeat-x;
+	}
+	
+	tr.TableHeader
+	,tr.TableFooter
+	{
+		background-image: none;
+		background-color: #f6f6f6;
+	}	
+	
+	.AdminForm  td
+	{
+		/* diaable because of conflict with jquery date picker */
+		/* padding: 10px 4px; */
+	}
+	
+	input.AdminForm 
+       ,option	
+	{
+		text-align:left;
+		background-color: #ffffdd;
+	}	
+
+	
+	.UpdateMsgDiv
+	{
+		text-align:left;
+		background-color: #ffffdd;	
+	}
+	
+	#UploadDefaultNavIcon
+	{
+		background-color: #eeeeee;
+	}
+	
+	ul.AdminForm  
+	{
+		list-style: none;
+	}	
+	
+	
+	li.AdminForm 
+	{
+		padding-bottom: 1em;
+	}	
+	
+	label.AdminForm
+	{
+		/*float: left;
+		 width: 12em;*/
+		padding-left: 2em;
+		margin-right: 1em;
+	
+		text-align: right;
+	}	
+ 	
+	textarea.AdminForm
+	{
+		font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+		font-size: 0.8em; 
+		color: #000000;
+	}
+	
+
+	fieldset#UpdateAll
+	{
+		width: auto;
+		margin-right: auto;
+		margin-left: auto;		
+		padding: 10px;
+		
+		clear: both;
+ 
+		background-color: #F0ECE6;	
+		background-image: none;
+		border: 3px solid #BFBAB0;	
+	
+	}
+	
+	fieldset#Navigation, fieldset#Design, fieldset#Content
+	{
+		display: inline;
+		float: left;		
+		width: 360px;
+	/* width: auto; */	
+		margin: 10px;
+	}
+	
+	fieldset#Navigation
+	{
+		/* float: right; */		
+	}
+	
+	fieldset#SetDefaultNavIcon
+      ,fieldset#SetPathSeperatorSymbol	
+	{
+		width: 320px;
+		margin: 30px;		
+	}	
+	
+	textarea#CMSComments
+	{
+		border: 3px solid #cccccc;
+		padding: 5px;
+	}	
+	
+	.DivBorder
+	{
+		display: inline;
+		margin: 1px;
+		padding: 1px;
+		border: solid 2px #cccccc;		
+	}
+	
+	 a.AdminFormLink
+	,div.ModEditActionDropDown
+	,p.StartEndDivP
+	{
+		width: 10em;
+	}
+	
+	/*----------------------------------------------------*\
+	|				    IMAGES							   |
+	\*----------------------------------------------------*/
+	
+.Icon20x20	
+{
+	/* width: 20px; */
+	height: 20px; 
+	border: none;				
+}
+
+.Icon30x30	
+{
+	/* width: 20px; */
+	height: 30px; 
+	border: none;				
+}
+
+.IconSmall	
+{
+	width: 16px;
+	height: 16px; 
+	border: none;				
+}
+
+.IconMed	
+{
+	width: 24px;
+	height: 24px; 
+	border: none;				
+}
+
+
+.IconLarge	
+{
+	width: 32px;
+	height: 32px; 
+	border: none;				
+}
+
+.NavIcon
+{
+	border: solid 1px #666666;
+}
+	
+.PhotoGalCycleThumbPreview
+{
+	margin-left: 20px;
+	width: 60px;
+	height: 40px;
+	/* margin-bottom: 0px; */
+
+}
+
+.PhotoGalCycleThumbPreview img 
+{	
+	width: 100%;		
+	height: 100%;		
+}	
+	/*--------------------------------------------------------------------------------------------*\
+	|				LOG-IN FORM						  |
+	\*--------------------------------------------------------------------------------------------*/
+	
+	div.CMSLogInPage
+	{
+		position: fixed;
+		z-index: 9999;
+		
+		top: 5px;
+
+		width: auto;		
+		
+		color: #000000;
+
+	}
+	
+	div.CMSLogInPage fieldset
+	{
+		width: 30em;
+	}
+
+	/*	==================	Misc Button Style Links	=======================	*/
+
+ a:link.ButtonLink
+,a:active.ButtonLink
+,a:visited.ButtonLink
+,a:link.ButtonLinkSelected
+,a:active.ButtonLinkSelected
+,a:visited.ButtonLinkSelected		
+{
+	margin: 0.5em;
+	padding: 0.5em;			
+	font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+	font-size: 0.7em;				
+}	
+	
+	
+ a:link.ButtonLink
+,a:active.ButtonLink
+,a:visited.ButtonLink	
+{
+
+	border-top: solid #eeeeee 2px;
+	border-right: solid #777777 2px;
+	border-bottom: solid #000000 2px;
+	border-left: solid #cccccc 2px; 
+			
+	color: #0000aa;
+	background-color: #ededed;			
+}
+	
+a:hover.ButtonLink
+{
+	background: #ffffff;
+	color: #558811;
+}
+
+ a:link.ButtonLinkSelected
+,a:active.ButtonLinkSelected
+,a:visited.ButtonLinkSelected		
+{	
+	border-top: solid #eeeeee 1px;
+	border-right: solid #777777 1px;
+	border-bottom: solid #000000 1px;
+	border-left: solid #cccccc 1px; 
+	
+	color: #dd0000;
+	background-color: #cccccc;			
+}		

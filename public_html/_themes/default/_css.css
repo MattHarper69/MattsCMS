@@ -1,0 +1,1049 @@
+	
+	/*=====================================================================================*\
+	|				CSS for NEW SITE				 - "Blue 1000px" theme					|
+	|																						|
+	|					by Matt Harper @ Site of Hand Web Design (c)2010 					|
+	\*=====================================================================================*/
+
+	@import "../common.css";	
+	@import "menu_top.css";
+	@import "menu_side.css";	
+	@import "resizable_div.css";
+	@import "shop_styles.css";
+	@import "shop_invoice.css";
+
+	
+	/*----------------------------------------------------*\
+	|				Screen Layout Divs					   |
+	\*----------------------------------------------------*/
+
+	body.MainSite
+	{
+		/* set default Font size here */
+		font-size: 0.8em; 
+		background-color: #ffffff;
+	}	
+	
+	
+/* 	for maxium width display in IE subtract 28 px to allow for sroll-bar 	*/
+
+/*	Remove the following div to create a "liquid" layout 	*/
+
+	.Container 
+	{		
+        width: 1000px;
+		
+		margin-top: 10px;
+		margin-right: auto;
+		margin-bottom: 10px;		
+		margin-left: auto;
+		/* padding: 10px; */
+		background-color:  #efefef;
+		font-family: Century Gothic, Avant Garde, Helvetica, Arial, Verdana;
+		color: #000000;		
+	} 
+
+	.Shutdown
+	{
+		text-align: center;
+	}
+
+	.Header 
+	{
+		width: 100%;
+		height: 150px;
+
+		margin-left: auto;
+		margin-right: auto;
+
+		padding-top: 0px;
+		padding-bottom: 0px;
+ 				
+		background-image: url('banner_logo.jpg');
+		background-repeat: no-repeat;
+		background-position:30px;
+		background-color: transparent;
+	
+		text-align: center;	
+		font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+		font-size: 0.9em; 
+		color: #000000;
+
+	}
+
+
+	.Wrapper1
+	{
+		/* border: solid 1px #000000; */		  
+	}
+	
+	.WrapperTop
+	{
+		background-image: url('BG_banner_stripes.jpg');
+		background-repeat: repeat-x;
+	}	
+
+	.Wrapper2
+	{
+		clear: left;
+
+		/* border: solid 1px #000000; */		
+	}
+	
+	.WrapperMenuTop
+	{	
+		width: 100%;
+		height: 45px;	
+		padding: 0;	
+		background-image: url('BG_Button_blue_grad.jpg');
+		background-repeat: repeat-x;
+		background-color: #00aad7;	
+
+/* border: solid 1px #000000;	 */	
+	}
+	
+	.Wrapper3
+	{
+		/* border: solid 1px pink; */
+	}	
+		
+	
+	.Side2Column
+	{
+		float:right;
+		width: 160px;
+		/* background-color: #cccccc; */
+	}
+	
+	.CentreColumn
+	{
+		float:left;
+	    width: 780px;
+		height: auto;
+				
+		overflow:auto;
+
+		/* margin: 10px; */
+		padding: 10px 20px 10px 20px;	
+			
+		background-color:transparent;		
+		
+	/* border: solid 1px pink; */	
+	}
+	
+	
+	.BreadCrumbDiv
+	{
+		clear: left;
+		
+		padding: 0.5em;
+
+		background-color: transparent;	
+				
+		border: solid 1px #eeeeee;
+		text-align: left;	
+	
+		font-size: 0.9em; 
+		font-style: italic;
+		color: #000000;			
+	}
+	
+	.Footer
+	{
+		clear:both;
+
+		width:1000px;
+		height:60px;
+		padding-top: 0.5em;
+		/* margin: 5px; */
+
+		background-color: #daeef8;	
+		border-top: solid 2px #00aad7;
+		
+		text-align: center;	
+	
+		font-size: 0.8em; 
+		color: #666666;	
+				
+	}	
+
+	.NewWindow
+	{		
+		height: 100%;
+		padding: 0.5em;	
+		text-align: center;
+	}
+	
+	
+	.NewWinText
+	{
+		height: 100%;
+
+		margin: 1em;
+		padding: 1em;
+		border: none;
+		background-color: #eeeeee;
+		
+		font-size: 1.1em;
+		text-align: justify;
+	}	
+	
+.Shadow, #ShopPromoItemList
+{
+	box-shadow: 6px 6px 9px #666; 
+	-moz-box-shadow: 6px 6px 9px #666;  /* for moz browsers	*/
+	-webkit-box-shadow: 6px 6px 9px #666; /* for Safari and chrome	*/ 
+	/* filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000,direction=135); */	/* for IE	*/
+}
+
+	/*------------------------------------------------*\
+	|					FONTS						   |
+	\*------------------------------------------------*/
+/* 	 */
+h1	
+{
+	font-size: 1.4em;
+	margin: 0.7em;
+	color: #1d6387;
+}	
+	
+h2	
+{
+	font-size: 1.3em;
+	margin: 0.7em;	
+	color: #000000;
+	
+}		
+
+h3	
+{
+	font-size: 1.2em;
+	margin: 0.6em;
+	color: #000000;	
+}
+	
+h4	
+{
+	font-size: 1.1em;
+	margin: 0.5em;
+}
+		
+p	
+{
+	font-size: 1em;
+	margin: 0.4em;
+}	
+	
+.Small
+{
+	font-size: 0.7em;
+	margin: 0.3em;
+}
+
+.Notice	
+{
+	font-size: 1.0em;
+	font-style: italic;
+	margin: 0.3em;
+}
+
+.RedHeading 
+{	
+	font-size: 1.2em;
+	font-weight: bolder;
+	color:#FF0000;
+}
+		
+.WarningMSG	
+{
+	font-size: 1.1em;
+	color: #dd0000;
+	margin: 0.5em;
+}	
+
+.WarningMSGSmall	
+{
+	font-size: 0.9em;
+	color: #dd0000;
+	margin: 0.2em;
+}	
+
+.OkMSG	
+{
+	font-size: 1.1em;
+	color: #00dd00;
+	margin: 0.5em;
+}	
+
+	
+	/*------------------------------------------------*\
+	|					LINKS						   |
+	\*------------------------------------------------*/	
+
+	/*	Global Links	*/
+	
+a:link
+{
+	color: #1111bb;
+	text-decoration: none;
+	outline: none;	
+
+}
+
+a:visited 
+{				
+	color: #5555ff;
+	text-decoration: none;		
+}
+
+a:focus
+{				
+	text-decoration: underline;
+	color: #1111bb; 	
+}
+
+a:active
+{					
+	color: #ff0000;	
+
+}
+
+a:hover 
+{					
+	color: #0000ff;
+	text-decoration: none;
+}
+	
+ a.ButtonLink:link
+,a.ButtonLink:visited
+,a.ButtonLink:active
+{
+	padding: 0.5em;
+	
+	border-top: solid #eeeeee 2px;
+	border-right: solid #777777 2px;
+	border-bottom: solid #000000 2px;
+	border-left: solid #cccccc 2px; 
+
+	background-color: #dddddd;	
+	color: #000000;
+}
+
+.NoClass
+{
+/*	Default Class - no properties need assigning for this class	*/
+}
+
+	
+	/*	================	BreadCrumb Links	==============	*/
+ .BreadCrumb a:visited
+,.BreadCrumb a:active
+,span.BreadCrumb
+{
+	color: #0000ff;	
+}
+
+ span.BreadCrumbSelected	
+{
+	color:#cc0000;
+
+	
+}
+	/*	==================	Footer Links	=======================	*/
+	
+div.MenuFooter
+{
+	margin: 0px 5px 0px 5px;
+}
+	
+ul.MenuFooter
+{	
+	list-style-type: none;
+}
+	
+li.MenuFooter 	
+{	
+	display: inline;
+}
+
+	/*	==================	Misc Button Style Links	=======================	*/
+
+ a:link.ButtonLink
+,a:active.ButtonLink
+,a:visited.ButtonLink
+,a:link.ButtonLinkSelected
+,a:active.ButtonLinkSelected
+,a:visited.ButtonLinkSelected		
+{
+	margin: 0.5em;
+	padding: 0.5em;			
+	font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+	font-size: 0.7em;				
+}	
+	
+	
+ a:link.ButtonLink
+,a:active.ButtonLink
+,a:visited.ButtonLink	
+{
+
+	border-top: solid #eeeeee 2px;
+	border-right: solid #777777 2px;
+	border-bottom: solid #000000 2px;
+	border-left: solid #cccccc 2px; 
+			
+	color: #0000aa;
+	background-color: #ededed;			
+}
+	
+a:hover.ButtonLink
+{
+	background: #ffffff;
+	color: #558811;
+}
+
+ a:link.ButtonLinkSelected
+,a:active.ButtonLinkSelected
+,a:visited.ButtonLinkSelected		
+{	
+	border-top: solid #eeeeee 1px;
+	border-right: solid #777777 1px;
+	border-bottom: solid #000000 1px;
+	border-left: solid #cccccc 1px; 
+	
+	color: #dd0000;
+	background-color: #cccccc;			
+}
+
+
+
+	/*	==================	Login Page	=======================	*/
+
+ul.LoginForm
+{	
+	list-style-type: none;
+}
+	
+	/*----------------------------------------------------*\
+	|				    IMAGES							   |
+	\*----------------------------------------------------*/
+	
+
+
+.TinyThumb
+{
+	height: 48px; 
+	border: none;				
+}	
+
+.LargeThumb
+{
+	height: 80px; 
+	border: none;				
+}	
+
+	/*----------------------------------------------------*\
+	|				   TABLES							   |
+	\*----------------------------------------------------*/
+	
+
+		
+	/*----------------------------------------------------*\
+	|				   MISC.							   |
+	\*----------------------------------------------------*/
+
+ input.FocusField
+,textarea.FocusField
+{
+	background-color: #eeeeee !important;
+	border: solid 2px #3333ff !important;
+}
+	
+.NoBorder 
+{
+	margin-left: auto;
+	margin-right: auto;
+	border: none;			
+}
+	
+.Padded5px 
+{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px 5px 5px 5px;		
+}
+
+	
+	/*=============================================================*\
+	|				Styles unique to MODULEs				   		|
+	\*=============================================================*/
+
+/*	==========	 All Areas	==============	*/
+	
+	
+ul.ListItems
+{
+	margin: 1em 5em 1em; 
+	text-align: left;
+	list-style-type: disc;
+}	
+
+.Image1Caption
+{	
+	display: block;
+	margin-bottom: 1em;
+}
+
+
+
+/*	==========	Header	=============	*/	
+
+
+ /* 	SearchBox 	*/
+.Header div.SearchBox
+{
+	position: relative;	
+	margin: 0 auto;
+	top: 157px;
+	left: 405px;
+	width: 180px;
+	height: 30px;
+}	
+
+
+
+input.SearchBox
+{
+	float: left;
+	height: 20px; 
+	width: 124px; 
+	border: solid 1px #96969d;
+	background-color: #f9f9f9;		
+	font-size: 1.1em;
+	padding: 4px 5px 0 5px;	
+}
+
+button.SearchBoxButton
+{
+	float: left;
+	height: 26px; 
+	width: 31px; 
+	background: url('Button_search.png');
+ 	border: none;
+
+	text-indent: -999em; 
+}
+	
+div.RemoveHiliteLink
+{
+	padding: 1em;
+}	
+	
+ a.RemoveHiliteLink:link
+,a.RemoveHiliteLink:visited
+,a.RemoveHiliteLink:active	
+{	
+
+	color: #333333;
+	background-color: yellow;
+	padding: 0.3em;
+	
+	border-top: solid #eeeeee 1px;
+	border-right: solid #777777 1px;
+	border-bottom: solid #000000 1px;
+	border-left: solid #cccccc 1px; 		
+}
+	
+ a.RemoveHiliteLink:hover
+,a.RemoveHiliteLink:focus
+{
+	background-color: #eeffdd;
+}
+
+/*	  Hilight Found Text	*/
+.HighlightLiteBlue
+{
+	color: #333333;
+	background-color: yellow;
+}
+ 
+
+/* Text to image (for Email) 	*/
+/* 
+div.EmailHead
+{	 
+	float: right;
+	width: 520px;
+	margin: 5px;
+}
+
+
+ #Text2Image_71
+,#Text2Image_72
+,#Text2Image_73
+,#Text2Image_74
+,#Text2Image_75
+,#Text2Image_76
+,#Text2Image_82
+{	
+	text-align: center;
+	background-color: transparent;
+	font-family: verdana;
+	font-size: 16pt;
+	font-weight: normal;
+	color: #666655;
+}
+
+ 
+.Text2Image a:hover 
+{ 
+	padding: 2px 5px;		
+	background-color: #eeeeee;
+	border-bottom: solid 1px #aaaaaa;
+	border-right: solid 1px #888888;		
+}
+
+ .Text2Image img
+{
+	border: none;
+}
+ */
+ 
+/*		Theme Switcher	*/
+div.ThemeSelector
+{		 
+	float: right;	 
+	width: 160px;
+	margin-right: 15px;
+	border: solid 1px #1d6387;	
+}
+
+/*		Log-out Link	*/
+div.LogoutLink
+{
+
+}
+
+
+/*	========	center column	=========	*/
+
+
+.SubMenuMod
+{
+	margin: 10px 20px 10px 20px;
+
+	list-style-type: none;
+	text-align: left;
+	font-size: 1.4em; 
+}	
+
+ #ShopPromoItemList
+,#Mod_3_1020
+,#Mod_3_1025
+,#Mod_3_1040
+,#Mod_3_9
+,#Mod_3_99
+,#Mod_3_100
+{
+	float: left;
+	margin: 10px;
+	padding: 10px 20px 10px 20px;
+	background-color: #ffffff;
+	border-top: solid #00aad7 4px;
+
+	
+}
+/* 	HOME PAGE 	*/
+
+ #Mod_1019_1021
+{
+	float: left;
+
+}
+
+ #Mod_1019_41
+,#Mod_1019_1022
+ 
+{
+	float: right;
+	width: 570px;
+
+}
+
+#Mod_3_1025
+{
+	width: 330px;
+}
+
+#ContactForm_9
+{
+	float: right;	
+}
+
+
+/*	================ Footer	================ */
+
+
+.SiteCredit
+{
+	margin: 5px;
+}
+
+div.ValidateLinks
+{	
+	height: 0;	/*	this is needed to collaps the div lying over the site credit link and preventing access to the link - in chrome and FF */	
+	position: relative;	
+	top: -45px;	
+}
+
+div.ValidateLinksXHTML
+{
+	position: relative;
+	display: inline;
+	left: -340px;
+}
+
+div.ValidateLinksCSS
+{
+	position: relative;
+	display: inline;
+	left: 340px;
+}
+
+	/*----------------------------------------------------*\
+	|			CONTACT FORM Styles						   |
+	\*----------------------------------------------------*/
+		
+div.ContactForm
+{
+	padding-bottom: 1em;
+	font-weight: bold;
+	font-size: 0.9em;
+	background-color: transparant;
+}
+
+ textarea
+,input
+{
+	font-family: Century Gothic, Avant Garde, Helvetica, Arial, Verdana;
+}
+
+.ContactForm label
+{
+	background-color: transparant;
+}
+
+.ContactForm fieldset
+{
+	/* position: relative; */
+	border: solid 1px #e9e9e9;
+	background-color: transparent;
+}
+
+ .ContactForm fieldset legend
+ {
+/* 		
+	position:absolute;
+	top: -.5em;
+	left: .5em;
+ */	
+	
+}
+
+ul.ContactForm
+{
+	margin: 1em;
+	text-align: left;
+	list-style-type: none;
+}
+
+ul.ContactForm li
+{
+	margin: 0.5em;
+}
+
+textarea#element_4
+{
+	width: 280px;
+}
+
+img.ContactFormImageLink 
+{
+	border: none;
+}
+
+ul.ContactFormConfirmMSG
+{
+	margin: 1em 4em 1em;
+	text-align: left;
+	list-style-type: disc;
+}
+
+ul.ContactFormConfirmMSG li span.Left
+{
+	font-weight: bold;
+	margin-right: 2em;
+}
+
+ul.ContactFormConfirmMSG li span.Right
+{
+	font-style: italic;
+}
+
+ .RequiredFormElement input
+,.RequiredFormElement textarea
+,.RequiredFormElement p
+{
+	background-color: #fffff0;
+	color: #000000;
+}
+
+ input.ErrorHilight
+,textarea.ErrorHilight
+{
+	border: solid 2px #dd0000;
+}
+
+/*		Captcha Styles		*/
+div.CaptchaDivContainer
+{
+	height: 3em;
+	width: 22em;
+	padding: 5px;
+	border: solid #aaaaaa 1px;
+}
+
+ div.CaptchaDivInput
+{
+	float: left; 
+	padding: 0.2em;
+}
+
+ div.CaptchaDivImage
+{
+	float: right; 
+	padding: 0em;	
+}
+
+ div.CaptchaDivErrorMSG
+{
+	float: left;
+	padding: 0.2em;
+}
+
+/* do CAPTCHA Image font colours here	*/
+.ImageCaptcha
+{
+	color: #1d6387;
+	background-color: #c1e3f3;
+	margin: 0.2em;
+	border: 2px solid #777777;	
+}
+
+.CaptchaDivImage label
+{
+	font-size: 0.7em;
+}
+
+ div.CaptchaDivImage a
+{
+	cursor: help;
+}
+
+/*	Captcha Explain and Reload Links	*/
+input.CaptchaReload
+{
+	border: none;
+	font-size: 0.7em;
+	color: #1111ee;
+	background-color: #cccccc;
+	border-top: solid #eeeeee 1px;
+	border-right: solid #777777 1px;
+	border-bottom: solid #000000 1px;
+	border-left: solid #cccccc 1px; 	
+}
+
+.CaptchaExplainLink
+{
+	font-size: 0.7em;
+}
+
+ div.CaptchaDivImage ul
+{
+	display: block;
+	text-align: justify;
+	list-style-type: none;	
+}
+
+ div.CaptchaDivImage ul li
+{
+	display: inline;
+}
+
+ .CaptchaExplain ul li
+{
+	position: absolute;	
+	left: -999em;
+	
+}
+
+ .CaptchaExplain li:hover ul li
+{
+	left: 40em;
+	width: 35em;
+	padding: 1em;
+	
+	border-top: solid #cccccc 3px;
+	border-right: solid #777777 3px;
+	border-bottom: solid #222222 3px;
+	border-left: solid #dddddd 3px; 
+	
+	background-color: #ffffff;
+}
+
+/*	submit BUTTON	*/
+#ContactFormElement_9_96
+{
+	text-align: center;
+}
+
+/*	HIDDEN submit BUTTON (at top - for usability)	*/
+ #ContactFormElement_9_122
+,#ContactFormElement_9_122 input
+{
+	margin: 0;
+	padding: 0;
+	height: 0;	
+	border: none;
+	background-color: transparant;
+}
+
+	/* ========================end Contact Form styles=================================================== */
+
+	/*----------------------------------------------------*\
+	|			SEARCH PAGE Styles						   |
+	\*----------------------------------------------------*/
+	
+.SearchResultsHilight
+{
+	font-weight: bold;
+	color: #000000;
+}
+	
+ /* 	SearchBox 	*/
+div.SearchBox
+{
+	position: relative;
+	margin: 0 auto;	
+	top: 5px;	
+	
+	width: 180px;
+	height: 30px;	
+}	
+
+div#SearchBox_10
+{
+	height: 55px;
+	font-size: 0.8em;
+}
+/*===============================================*/
+ul.SearchResults
+{
+	margin: 1em 5em 1em;
+	text-align: left;
+	list-style-type: none;
+}
+
+li.SearchResults
+{	
+	font-weight: bold;
+}
+
+ ul.SearchResults ol
+,ul.SearchResults ol li
+{
+	margin-top: 0.2em;
+	margin-left: 2em;
+	text-align: left;
+	font-weight: normal;
+}
+
+li.SearchResults
+{	
+	margin: 1em;
+	border-bottom: solid #aaaaaa 2px;
+	padding-bottom: 1em;	
+}
+
+.SearchResults p 
+{	
+	margin: 0.2em;
+}
+
+.SearchLink
+{
+	font-style: italic;
+	margin: 1em;
+}
+
+a.SearchPageHeading
+
+{
+	font-size: 1.2em;
+}
+
+
+ a.SearchLink:link
+,a.SearchLink:visited
+,a.SearchLink:active
+,a.SearchPageHeading:link
+,a.SearchPageHeading:visited
+,a.SearchPageHeading:focus
+,a.SearchPageHeading:active
+{
+	color: #2222cc;
+}
+
+
+ a.SearchLink:hover
+,a.SearchPageHeading:focus
+,a.SearchPageHeading:hover
+{					
+	text-decoration: underline;
+	color: #0000ff;
+}
+
+li.SearchResultsNav
+{
+	display: inline;
+	margin: 0.3em;
+	list-style-type: none;
+}
+
+div.SearchResultsNav
+{
+	padding: 0.8em;
+}
+
+ a.SearchResultsNav:link
+,a.SearchResultsNav:visited
+,a.SearchResultsNav:active
+{
+	padding: 0.2em;
+	border: solid #333333 1px;
+	background-color: #eeeeee;
+}
+
+ a.SearchResultsNav:hover
+,a.SearchResultsNav:focus
+{
+	background-color: #ffffff;
+	text-decoration: none;
+}
+
+ span.SearchResultsNav
+{
+	font-weight: bold;
+	padding: 0.2em;
+	border: solid #333333 1px;
+}

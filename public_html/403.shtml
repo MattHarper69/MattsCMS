@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Error on this Page - Code: 403</title>
+	<link rel="stylesheet" href="/_themes/error.css" type="text/css" media="screen" /> 
+	<link rel="shortcut icon" href="/favicon.ico" /> 
+	
+</head>
+<body>
+	<div class="Banner">
+	</div>
+	
+	<div class="Container">
+	
+		<h2>Sorry, The Page you are requesting is Forbidden</h2>
+						
+		<br />
+
+		<h2>					
+			<a href="/index.php">Please click here to return to the home page... </a>							
+		</h2>
+		
+		<p>please contact the following email for more information if this error persists:</p>
+		<img src="/images_misc/webmaster_email.jpg" />
+		<p>Thank You,</p>
+		<p><a href="http://siteofhand.com.au" >Site Of Hand Web Design</a></p>
+	
+	</div>
+	
+</body>
+</html>

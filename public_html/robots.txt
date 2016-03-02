@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Disallow: /_SYNCAPP/
+Disallow: /thumbs/
+Disallow: /_files/
+Disallow: /CMS/
+Disallow: /modules/
+Disallow: /gd_fonts/
+Disallow: /_images_user/
+Disallow: /enteradmin/
+Disallow: /_javascript_custom/
+Disallow: /_themes/
+Disallow: /includes/
+Disallow: /images_misc/
+Disallow: /_ext_files/
+Disallow: /images/
+Disallow: /invoices/
+Disallow: /_images_shop/
+Disallow: /_media/
+Sitemap:http://newsite.lin/Sitemap.xml

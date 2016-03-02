@@ -1,0 +1,110 @@
+
+	Access Control:
+	
+	Table:	_cms_user_access_types
+	
+	** Configures the types of log-in accounts
+	
+account_id 		name 				access_code 	description
+-----------------------------------------------------------------------------------------------------------------------
+  	1 		Super Administrator 		1 		has access all areas
+ 	2 		User Account Admin 			2 		has access all areas except the System Admin area ( can configure Users except theirs and the Super)
+ 	3 		Site Administrator 			3 		Has access to: Site Settings, Navigation and Edit Content and Settings for pages( all but System
+																															Admin and User config )
+ 	4 		Page Editor 				4 		Has access to: Edit Page Content and Settings (can not delete Pages)
+ 	5 		Content Editor 				5		Has access to: Edit Page Content Only (can not modify Mod settings or Delete Mods) 
+ 	10 		Public Area 				10 		Can not log in to the Admin area - Only Public the Public area
+	
+	
+------------------------------------------------------------------------------------------------------------------------
+
+
+	Table: user_accounts	
+
+ user_id 	username 	password 	account_id 	active 	email 			use_email_4_username 	created 		last_login 			expire_time
+ ---------------------------------------------------------------------------------------------------------------------------------------------
+ 	1 		mharper 	005f88...		1 		on 		matt@gmail.com 			on 		0000-00-00 00:00:00 	2010-10-06 14:00:54 	15
+ 	2 		new_user 	005f88... 		5 		on 		matt@bigpond.com 		on 		0000-00-00 00:00:00 	2010-10-06 14:01:36 	15
+	4 		user_admin 	005f88... 		2 		on  	NULL 					on 		0000-00-00 00:00:00 	2010-10-06 01:58:56 	15
+	...
+	
+	** account_id is linked to account_id in Table:	_cms_user_access_types
+	** use_email_4_username allows user to use email address as username when logging-in
+	** expire_time is time in minutes that user will stayed logged-in ( Admin or Public Area) if no activity (movenent) recorded
+------------------------------------------------------------------------------------------------------------------------
+	
+	
+	Table: 	user_page_access (sample)
+
+user_id 	page_id 	access_right	
+-------------------------------------------------------
+	2 			1 			2
+ 	2 			2 			2
+	2 			3 			0
+ 	2 			4 			1
+	2			5			2
+	2			6			2
+	...			...			...
+	
+		** access_right:  0 = no access to the CENTER DIV of this Page in the Public area WHEN 'requires_login' in table: page_info is set 'on'
+							= no access to View or Edit this page in the Admin area
+						  1 = can View this this page in Public Area WHEN logged-in
+						    = can only Preview this page in Admin area ( can not edit content or settings )
+						  2 = can View this this page in Public Area
+						    = can Preview and Edit content and Settings for this page in the Admin area WHEN logged-in
+							
+------------------------------------------------------------------------------------------------------------------------	
+
+
+	Table: page_info (sample)
+	
+ 	page_id		page_name 	menu_text 	url_alias 	active 	requires_login 	access_code 	.............
+------------------------------------------------------------------------------------------------------------------------	
+		1		About us	About us	about		on			-				10
+		2		Members		members		members		on			on				10
+		3		Portfolio   Portfolio	port		on			-				10
+		4		Contact Us	Contact Us	contact		on			-				10
+		5		Payment		Payment 	payment		on			on				4
+		6		Map			map			map			-			-				10
+
+	
+	** user_id: 2 ("new_user" set as a "Content Editor"):
+						
+						Can		- Login with the username: "new_user" or "matt@bigpond.com"
+								- View all areas of the Public Area except the Center content of page "5" and "6"
+								- View the Center content of page "2" If Loggend in -  but NOT "5"
+								
+								- Edit all pages (in admin area, when Logged-in) except "2" and "4"
+								
+						Pages	1 (about): access all areas
+								2 (members): can view in public area if logged-in *** "requires_login" is set on
+								3 (portfolio): can view in public area - but CAN NOT view or edit in Admin area *** "access_right" is set to 0 for
+												this page
+								4 (contact): can view in public area - but CAN NOT edit in Admin area *** "access_right" is set to 1 for this page
+								5 (payment): can NOT view in public area - but CAN edit and view in Admin area *** "access_code" (4)is lower than a
+												"Content Editor"'s access_code (5)
+								6 (map):	can NOT view in public area - but CAN edit and view in Admin area *** this page is set as NOT active.
+								
+
+						Will be	- Logged-out after 15mins on in-activity in the either Admin area or when logged-in to the Public area
+						
+						SUMMARY:
+						=================================================================================================
+						|		|			NOT Logged-in			|					LOGGED-IN						|
+						|		 ---------------------------------------------------------------------------------------
+						| PAGE	|	PUBLIC	VIEW	|	ADMIN		|	PUBLIC	VIEW	|	Admin VIEW	|	Admin EDIT	|
+						 -----------------------------------------------------------------------------------------------
+						| 	1	|		YES			|		n/a		|		YES			|		YES		|		YES		|
+						------------------------------------------------------------------------------------------------
+						| 	2	|		NO			|		n/a		|		YES			|		YES		|		YES		|
+						------------------------------------------------------------------------------------------------
+						| 	3	|		YES			|		n/a		|		YES			|		NO		|		NO		|
+						------------------------------------------------------------------------------------------------
+						| 	4	|		YES			|		n/a		|		YES			|		YES		|		NO		|
+						------------------------------------------------------------------------------------------------
+						| 	5	|		NO			|		n/a		|		YES			|		YES		|		YES		|
+						------------------------------------------------------------------------------------------------
+						| 	6	|		NO			|		n/a		|		NO			|		YES		|		YES		|
+						=================================================================================================
+						
+						

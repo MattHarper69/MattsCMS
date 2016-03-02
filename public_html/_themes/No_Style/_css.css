@@ -1,0 +1,25 @@
+
+		/*	No styles Here....		except to render the "text 2 Image" email address	*/
+ 
+ 
+ /* Text to image (for Email) 	*/
+ #Text2Image_71
+,#Text2Image_72
+,#Text2Image_73
+,#Text2Image_74
+,#Text2Image_75
+,#Text2Image_76
+{	
+	background-color: transparent;
+	font-family: verdana;
+	font-size: 16pt;
+	font-weight: normal;
+	color: #000000;	
+}
+
+/*	KIll Flash Logo */
+ div.Div_1_1
+,div.Div_1_7
+{
+	display: none;
+}

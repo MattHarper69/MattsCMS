@@ -1,0 +1,44 @@
+	
+	/*-------------------------*\
+	|    Shop Invoice Styles    |
+	\*-------------------------*/
+
+.ShopReceiptDisplay
+{
+	width: 580px;
+	margin: 1em;
+	padding: 1em;
+	border: solid #cccccc 1px; 
+
+	font-size: 0.9em;
+	font-family: Century Gothic, Avant Garde, Helvetica, Arial, Verdana;
+	color: #000000;	
+}
+
+.ShopReceiptDisplay label
+ {
+	float:left;
+	width: 6em;
+	font-weight: bold;
+}
+
+
+.Spacer	
+{
+	margin: 6em;
+}	
+
+ tr.ShopReceiptTableHeader
+,tr.ShopReceiptTableFooter
+{
+
+	background-color: #eeeeee;
+	font-weight: bold;
+}
+
+ .ShopCartTableCell
+,.ShopReceiptTableHeader th
+,.ShopReceiptTableFooter td
+{
+	padding: 0.5em 1em;
+}

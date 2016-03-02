@@ -1,0 +1,80 @@
+
+	
+	/*============================================================================================*\
+	|				 CSS by Matt Harper @ Site of Hand Web Design (c)2009 					|
+	\*============================================================================================*/
+
+	
+	/*	=================	Side Menu	================	*/
+	
+#CMS_MenuSideDiv
+{		
+	width: 140px;
+	float: left;
+	
+ 	margin: 0;
+	padding: 8px; 
+	background-color: #eeeeee;
+
+	font-size: 12px;			
+	font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+	text-align: left;
+
+}
+
+/*	=================================================================================================================	*/
+/*  */
+ #CMS_MenuSide
+,#CMS_MenuSide ul 
+{
+	list-style: none;
+	line-height: 1;
+	padding: 0;
+}
+
+
+#CMS_MenuSide ul 
+{
+	margin-left: 1em;
+}
+
+#CMS_MenuSide a 
+{
+	display: block;
+	color: #0000ee;
+	text-decoration: none;
+ 	padding: 4px 10px;	 
+}
+
+
+ #CMS_MenuSide a:hover
+{
+	color: green;
+}
+
+/*	Currently Selected Link	*/
+#CMS_MenuSide li.Selected
+{
+/* 	font-weight:bold; */
+	
+}
+
+ #CMS_MenuSide li.Selected a
+ {
+ 	color:#cc0000;
+}
+
+ #CMS_MenuSide li.Selected li a
+ {
+	color: #0000ee;
+}
+
+/*  #CMS_MenuSide li li.Selected
+{
+    padding: 1px 10px 1px 0;
+} */
+
+
+
+
+

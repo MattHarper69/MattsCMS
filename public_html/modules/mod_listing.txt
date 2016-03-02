@@ -1,0 +1,48 @@
+
+Mod ID	|	Mod Name					|	FIle Name					|	included files					|	Complete ? / comments
+-===============================================================================================================================================================
+	1		Text 1  						text_1.php															yes
+	2		List Items 						list_items.php														yes
+	3 		Site Design by 					site_credits.php													yes
+	4 		W3C Validated Links 			w3c_validate_links.php												yes
+	5 		Sub Menu List 					sub_menu.php														yes
+	23 		Sub Menu List (2 Columns)		sub_menu_2cols.php													yes	
+	6 		Search Site Box 				search_box.php														yes
+	7 		Search Site Page 				search_page.php					search_box.php						may modify to search multiple words
+	8		Display Text as an Image		text_2_image.php				image file: (../text_image.php)		yes
+	9		Log-out Link					logout_link.php														yes
+	10		Contact Us Form					contact_form.php				captcha & (dir)						in progess - do File Upload
+	11		Single Image					image_1.php						../image_show.php					yes
+	12		Photo Browser - Php 			photo_browser_php.php												not working
+	13		Photo Browser - Flash 			photo_browser_flash.php												yes
+	14		Heading							heading.php															yes
+	15		Theme Switcher					theme_switcher.php													yes
+	16		Google Map						google_map.php					google_map (dir)
+	17		Insert HTML						insert_html.php					insert_html_head.php				in progess
+	18		Flash Player					flash_player.php													yes
+	19		Div Start														(php_functions.php)
+	20		Div End															(php_functions.php)
+	21		Link							link.php														modify to allow multiple links per module
+	22		Contact Listing					contact_list.php													yes
+	24		Online Shop						shop_index.php					shop (dir)
+
+	26		Add to Cart Button				shop_add2cart_button.php
+	27		Shopping Cart SideBar			shop_cart_side.php
+	28		Postage Calculator SideBar		shop_post_calc_user.php
+ 	29 		Continue Shopping Button 		shop_cont_shop_button.php  	
+	30 		PayNow Side Button (Canceled) 	shop_canx_paynow_side.php
+	31		Invoice Viewer					invoice_viewer.php													NO
+	32		Theme Override					theme_override.php													yes
+	33		Site Map						sitemap.php															yes
+	34		Photo Gallery					photo_gal_index.php				photo_gal_index_head.php
+	101 	Website Portfolio 				website_portfolio.php												yes
+	102		Sweeps shop						sweeps_index.php				sweeps (dir)
+	103		Sweeps Cart SideBar				sweeps_cart_side.php			CODE_NAME.'_shop_configs.php		yes
+	104		Sweeps Promo Listing			sweeps_promo_list.php			CODE_NAME.'_shop_configs.php		yes
+	105		Sweeps Agent Login				sweeps_agent_login.php												yes
+	106		Sweeps Agent Auto Login			sweeps_agent_auto_login.php											yes
+
+	
+	
+	
+========================================================================================================================================================
